@@ -1,6 +1,4 @@
-﻿//Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-
-namespace Task_2
+﻿namespace Test_1
 {
     internal class Program
     {
@@ -11,12 +9,12 @@ namespace Task_2
 
             void ThirdNumber(int arrg)
             {
-                if (num <= 99) Console.WriteLine("Третьей цифры нет");
+                if (num <= 99) Console.WriteLine("Третьего числа нет");
                 else
                 {
                     while (num > 999)
                     {
-                        num =  num / 10;
+                        num = num / 10;
                     }
                     Console.WriteLine(num % 10);
                 }
